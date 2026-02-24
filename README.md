@@ -2,22 +2,7 @@
 
 A deep learning project for predicting energy demand using RNN, LSTM, Bidirectional LSTM, and Encoder-Decoder architectures on the PJM Interconnection hourly energy dataset.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Models](#models)
-- [Results](#results)
-- [Web Interface](#web-interface)
-- [Project Structure](#project-structure)
-
-## 🎯 Overview
+##  Overview
 
 This project implements and compares four different sequential neural network architectures for time series forecasting of energy demand:
 - Simple RNN (baseline)
@@ -27,7 +12,7 @@ This project implements and compares four different sequential neural network ar
 
 The models predict 24-hour ahead energy demand using 168 hours (1 week) of historical data across 5 regions in the PJM Interconnection grid.
 
-## ✨ Features
+##  Features
 
 - **Data Preprocessing Pipeline**: Automated cleaning, feature engineering, and sequence generation
 - **Multiple Model Architectures**: Compare 4 different sequential models
@@ -36,7 +21,7 @@ The models predict 24-hour ahead energy demand using 168 hours (1 week) of histo
 - **Model Persistence**: Save and load trained models for future use
 - **Temporal Feature Engineering**: Cyclical encoding for time-based patterns
 
-## 📊 Dataset
+##  Dataset
 
 **Source**: PJM Interconnection Hourly Energy Consumption Data (2005-2018)
 
@@ -51,7 +36,8 @@ The models predict 24-hour ahead energy demand using 168 hours (1 week) of histo
 
 **Features**: 11 (5 energy regions + 6 temporal features)
 
-## 🚀 Installation
+
+##  Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -81,7 +67,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 📝 Usage
+##  Usage
 
 ### Step 1: Data Preparation
 
@@ -129,8 +115,8 @@ streamlit run app.py
 ```
 
 The app will open in your browser at `http://localhost:8501`
-
-## 🧠 Models
+\
+##  Models
 
 ### 1. Simple RNN
 **Architecture**: 2 SimpleRNN layers (64, 32 units)  
@@ -157,7 +143,7 @@ All models include:
 - Adam optimizer
 - MSE loss function
 
-## 📈 Results
+##  Results
 
 Expected performance on test data:
 
@@ -169,17 +155,6 @@ Expected performance on test data:
 | Encoder-Decoder | ~1,900 | ~1,400 | 4.5-6% |
 
 *LSTM and Bi-LSTM typically provide the best performance.*
-
-## 🌐 Web Interface
-
-The Streamlit web app provides an intuitive interface for making predictions:
-
-**Features**:
-- 📅 Date/time picker for selecting prediction start point
-- 🔄 Model selector (choose from 4 trained models)
-- 📊 Real-time visualization of predictions vs actual values
-- 📉 Accuracy metrics (RMSE, MAE, MAPE)
-- 💾 Download results as CSV
 
 **Available date range**: 2017-03-24 to 2018-08-03 (test period)
 
