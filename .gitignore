@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Data files (too large for GitHub)
+*.csv
+*.npy
+*.pkl
+*.h5
+*.keras
+
+# But keep the raw dataset reference in README
+!README.md
+
+# Saved models (too large, but can be retrained)
+saved_models/
+*.h5
+*.pb
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Generated outputs (can be regenerated)
+*.png
+*.jpg
+*.jpeg
+model_comparison.csv
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
